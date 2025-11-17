@@ -8,12 +8,14 @@ open class UUJsonObjectConverter<T: Any>(private val objectClass: Class<T>)
     @TypeConverter
     fun stringToObject(value: String?): T?
     {
-        return UUJson.fromString(value, objectClass)
+        val actualValue = value ?: return null
+        return UUJson.fromString(actualValue, objectClass).getOrNull()
     }
 
     @TypeConverter
     fun objectToString(value: T?): String?
     {
-        return UUJson.toJson(value, objectClass)
+        val actualValue = value ?: return null
+        return UUJson.toJson(actualValue, objectClass).getOrNull()
     }
 }
