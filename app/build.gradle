@@ -21,12 +21,16 @@ dependencies {
     implementation 'com.google.android.material:material:1.13.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
     implementation 'androidx.core:core-ktx:1.17.0'
+    implementation 'androidx.activity:activity-compose:1.12.0'
 
     implementation "com.silverpine.uu:uu-core-ktx:${uu_core_version}"
     //implementation "com.silverpine.uu:uu-ux-ktx:${uu_ux_version}"
 
 
     implementation project(':library')
+    implementation 'androidx.compose.runtime:runtime-android:1.9.5'
+    implementation 'androidx.compose.material3:material3-android:1.4.0'
+    implementation 'androidx.compose.ui:ui-tooling-preview-android:1.9.5'
 
     testImplementation 'junit:junit:4.13.2'
 
