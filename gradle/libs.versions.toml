@@ -1,0 +1,36 @@
+[versions]
+
+# library
+room = "2.8.3"
+
+# app
+activity = "1.12.0"
+compose_material3 = "1.4.0"
+compose_runtime = "1.9.5"
+compose_ui = "1.9.5"
+constraintlayout = "2.2.1"
+core_ktx = "1.17.0"
+material = "1.13.0"
+
+# uu
+uu_core = "0.0.24"
+uu_test = "0.0.20"
+
+[libraries]
+
+# library
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+
+# app
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity" }
+androidx-compose-material3-android = { module = "androidx.compose.material3:material3-android", version.ref = "compose_material3" }
+androidx-compose-runtime-android = { module = "androidx.compose.runtime:runtime-android", version.ref = "compose_runtime" }
+androidx-compose-ui-tooling-preview-android = { module = "androidx.compose.ui:ui-tooling-preview-android", version.ref = "compose_ui" }
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "core_ktx" }
+google-material = { module = "com.google.android.material:material", version.ref = "material" }
+
+# uu
+uu-core-ktx = { module = "com.silverpine.uu:uu-core-ktx", version.ref = "uu_core" }
+uu-test-ktx = { module = "com.silverpine.uu:uu-test-ktx", version.ref = "uu_test" }
+uu-test-instrumented-ktx = { module = "com.silverpine.uu:uu-test-instrumented-ktx", version.ref = "uu_test" }
