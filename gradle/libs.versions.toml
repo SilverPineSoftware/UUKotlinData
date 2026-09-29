@@ -11,7 +11,7 @@ constraintlayout = "2.2.2"
 material = "1.14.0"
 
 # uu
-uu_core = "0.0.36"
+uu_core = "0.0.37"
 uu_test = "0.0.25"
 
 [libraries]
